@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Intro = () => {
 	return (
-		<div className="bg-[#232323] h-[80vh] px-8 text-white">
+		<div className="bg-[#232323] h-[80vh] md:h-[85vh] px-8 text-white">
 			<div className="flex flex-col items-center pt-32 pb-8">
 				<p className="text-center text-xl mb-4 text-orange-400">Welcome</p>
 				<h1 className="text-center text-3xl font-bold mb-4">CREAMY HOT AND READY TO SERVE</h1>

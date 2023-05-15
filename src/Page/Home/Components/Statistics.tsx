@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Variants, motion, useMotionValue, useTransform, animate } from "framer-motion";
 const Statistics = () => {
 	return (
-		<div className="bg-black flex flex-col gap-16 py-16 px-8">
+		<div className="bg-black flex flex-col gap-16 py-16 px-8 md:flex-row md:gap-24 md:justify-center md:py-36 md:px-48">
 			<Feature number={10} description="Coffee branches" />
 			<Feature number={5} description="Number of awards" />
 			<Feature number={10000} description="Happy customer" />

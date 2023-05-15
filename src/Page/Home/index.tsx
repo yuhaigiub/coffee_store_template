@@ -17,8 +17,14 @@ const Home = () => {
 	return (
 		<>
 			<Intro />
-			<Info />
-			<Booking style="yellow" />
+			<div className="md:grid md:grid-cols-5 md:bg-black">
+				<div className="md:col-span-3">
+					<Info />
+				</div>
+				<div className="md:col-span-2 relative">
+					<Booking style="yellow" />
+				</div>
+			</div>
 			<Story />
 			<Features />
 			<Menu />

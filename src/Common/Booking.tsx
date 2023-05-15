@@ -5,29 +5,31 @@ const Booking: React.FC<{ style?: "yellow" | "black" }> = ({ style = "yellow" })
 	return (
 		<Container style={style}>
 			<h2 className="text-white text-2xl mb-4">BOOK A TABLE</h2>
-			<div className="flex flex-col">
+			<div className="flex flex-col md:grid md:grid-cols-2 md:gap-x-8">
 				<Input placeholder="First name" style={style} />
 				<Input placeholder="Last name" style={style} />
 				<Input placeholder="Date" type="date" style={style} />
 				<Input placeholder="Time" type="time" style={style} />
 				<Input placeholder="Phone" style={style} />
 				<Input placeholder="Message" style={style} />
-				<motion.button
-					className="w-full h-10 mt-4"
-					style={{ backgroundColor: style === "yellow" ? "#fff" : "#c49b63" }}
-					whileHover={{
-						scale: 1.1,
-						backgroundColor: style === "yellow" ? "#efefef" : "#a46e22",
-						borderRadius: 30,
-						transition: {
-							borderRadius: {
-								duration: 0.3,
+				<div className="md:col-span-2 md:flex md:justify-center">
+					<motion.button
+						className="w-full md:w-1/2 h-10 mt-4"
+						style={{ backgroundColor: style === "yellow" ? "#fff" : "#c49b63" }}
+						whileHover={{
+							scale: 1.1,
+							backgroundColor: style === "yellow" ? "#efefef" : "#a46e22",
+							borderRadius: 30,
+							transition: {
+								borderRadius: {
+									duration: 0.3,
+								},
 							},
-						},
-					}}
-					whileTap={{ scale: 0.9 }}>
-					Send
-				</motion.button>
+						}}
+						whileTap={{ scale: 0.9 }}>
+						Send
+					</motion.button>
+				</div>
 			</div>
 		</Container>
 	);

@@ -19,8 +19,10 @@ const Layout: React.FC = () => {
 
 	return (
 		<div>
-			<motion.header layout className="bg-black text-white sticky top-0 z-10">
-				<div className="flex items-center justify-between h-20 px-8">
+			<motion.header
+				layout
+				className="bg-black text-white sticky top-0 z-10 md:h-[15vh] md:flex md:items-center">
+				<div className="w-full flex items-center justify-between h-20 px-8 md:px-48">
 					<button
 						className="text-center font-bold cursor-pointer"
 						onClick={() => {
@@ -29,7 +31,42 @@ const Layout: React.FC = () => {
 						}}>
 						Coffee Store
 					</button>
+					<ul className="hidden md:flex justify-end w-full list-none">
+						<li>
+							<MenuButton2
+								text="HOME"
+								handleClick={() => {
+									handleClick("/");
+								}}
+							/>
+						</li>
+						<li>
+							<MenuButton2
+								text="MENU"
+								handleClick={() => {
+									handleClick("/menu");
+								}}
+							/>
+						</li>
+						{/* <li>
+								<MenuButton2
+									text="ABOUT"
+									handleClick={() => {
+										handleClick("/about");
+									}}
+								/>
+							</li> */}
+						<li>
+							<MenuButton2
+								text="BLOG"
+								handleClick={() => {
+									handleClick("/blog");
+								}}
+							/>
+						</li>
+					</ul>
 					<motion.button
+						className="md:hidden"
 						style={{ color: isOpen ? "#c49b63" : "#fff" }}
 						whileHover={{
 							color: "#c49b63",
@@ -48,7 +85,7 @@ const Layout: React.FC = () => {
 				<AnimatePresence>
 					{isOpen && (
 						<motion.ul
-							className="list-none flex flex-col justify-start overflow-hidden"
+							className="list-none flex flex-col justify-start overflow-hidden md:hidden"
 							layout
 							variants={menuVariants}
 							initial="enter"
@@ -137,6 +174,24 @@ const MenuButton: React.FC<{ text: string; handleClick: () => void }> = ({ text,
 			className="w-full text-left py-2 px-8"
 			onClick={handleClick}
 			whileHover={{ color: "#c49b63", backgroundColor: "#232323" }}>
+			{text}
+		</motion.button>
+	);
+};
+
+const MenuButton2: React.FC<{ text: string; handleClick: () => void }> = ({
+	text,
+	handleClick,
+}) => {
+	return (
+		<motion.button
+			className="w-full text-left py-2 px-8"
+			onClick={handleClick}
+			whileHover={{
+				color: "#c49b63",
+				scale: 1.2,
+				transition: { scale: { duration: 0.25, type: "spring" } },
+			}}>
 			{text}
 		</motion.button>
 	);
