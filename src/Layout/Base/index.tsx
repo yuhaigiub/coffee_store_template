@@ -133,10 +133,12 @@ const Layout: React.FC = () => {
 				<Outlet />
 			</main>
 
-			<footer className="bg-black">
-				<About />
-				<Service />
-				<Contact />
+			<footer className="bg-black md:py-36 md:px-48">
+				<div className="md:grid md:grid-cols-3 md:gap-8">
+					<About />
+					<Service />
+					<Contact />
+				</div>
 				<Copyright />
 			</footer>
 		</div>

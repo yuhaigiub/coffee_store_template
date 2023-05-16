@@ -1,9 +1,10 @@
 import React from "react";
 import Item from "./Item";
-
+import StaggerWrap from "./StaggerWrap";
+import { motion } from "framer-motion";
 const Drinks = () => {
 	return (
-		<>
+		<StaggerWrap key="Drinks">
 			<Item
 				name="Margarita"
 				price={5.99}
@@ -28,7 +29,7 @@ const Drinks = () => {
 				description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia."
 				color="red"
 			/>
-		</>
+		</StaggerWrap>
 	);
 };
 

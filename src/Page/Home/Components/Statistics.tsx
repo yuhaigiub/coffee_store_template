@@ -30,7 +30,7 @@ const Feature: React.FC<{ number: number; description: string }> = ({ number, de
 
 	return (
 		<motion.div
-			className="flex flex-col items-center"
+			className="flex flex-col items-center md:gap-2"
 			variants={variants}
 			initial="offScreen"
 			whileInView="onScreen"
@@ -38,9 +38,9 @@ const Feature: React.FC<{ number: number; description: string }> = ({ number, de
 			onViewportEnter={() => {
 				setInView(true);
 			}}>
-			<div className="w-16 aspect-square border-[#c49b63] border-2 bg-transparent mb-2"></div>
-			<motion.h3 className="text-3xl font-semibold text-[#c49b63]">{rounded}</motion.h3>
-			<p className="text-center text-white">{description}</p>
+			<div className="w-16 aspect-square border-[#c49b63] border-2 bg-transparent mb-2 md:w-24"></div>
+			<motion.h3 className="text-3xl font-semibold text-[#c49b63] md:text-2xl">{rounded}</motion.h3>
+			<p className="text-center text-white md:text-md">{description}</p>
 		</motion.div>
 	);
 };

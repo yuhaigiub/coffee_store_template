@@ -4,18 +4,18 @@ import { useNavigate } from "react-router-dom";
 
 const Image: React.FC<{ color?: string }> = ({ color }) => {
 	if (color === "pink") {
-		return <div className="h-20 bg-pink-300"></div>;
+		return <div className="h-20 bg-pink-300 md:aspect-video md:h-48 lg:h-36"></div>;
 	}
 	if (color === "red") {
-		return <div className="h-20 bg-red-300"></div>;
+		return <div className="h-20 bg-red-300 md:aspect-video md:h-48 lg:h-36"></div>;
 	}
 	if (color === "yellow") {
-		return <div className="h-20 bg-yellow-300"></div>;
+		return <div className="h-20 bg-yellow-300 md:aspect-video md:h-48 lg:h-36"></div>;
 	}
 	if (color === "blue") {
-		return <div className="h-20 bg-blue-300"></div>;
+		return <div className="h-20 bg-blue-300 md:aspect-video md:h-48 lg:h-36"></div>;
 	}
-	return <div className="h-20 bg-white"></div>;
+	return <div className="h-20 bg-white md:aspect-video md:h-48 lg:h-36"></div>;
 };
 
 const BlogPost: React.FC<{
@@ -32,7 +32,7 @@ const BlogPost: React.FC<{
 
 	return (
 		<motion.article
-			className="flex flex-col gap-2 pt-8 cursor-pointer"
+			className="flex flex-col gap-2 pt-8 cursor-pointer md:px-4 md:items-center"
 			variants={{
 				hover: {
 					filter: "contrast(150%)",
@@ -51,7 +51,7 @@ const BlogPost: React.FC<{
 				</p>
 			</div>
 			<motion.h3
-				className="text-2xl"
+				className="text-2xl md:text-3xl"
 				variants={{
 					hover: {
 						color: "#999",
@@ -60,7 +60,7 @@ const BlogPost: React.FC<{
 				}}>
 				{title}
 			</motion.h3>
-			<p className="text-sm text-justify text-slate-300">{description}</p>
+			<p className="text-sm text-justify text-slate-300 md:text-center md:px-8">{description}</p>
 		</motion.article>
 	);
 };

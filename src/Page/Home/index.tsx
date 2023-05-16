@@ -33,8 +33,10 @@ const Home = () => {
 			<Discover />
 			<Testimony />
 			<Blog />
-			<Location />
-			<Booking style="black" />
+			<div className="md:grid md:grid-cols-2 md:bg-[#232323]">
+				<Location />
+				<Booking style="black" />
+			</div>
 		</>
 	);
 };

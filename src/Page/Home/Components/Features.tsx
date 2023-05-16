@@ -30,9 +30,9 @@ const Feature: React.FC<{ title: string; description: string }> = ({ title, desc
 			initial="offScreen"
 			whileInView="onScreen"
 			viewport={{ once: true, amount: "all" }}>
-			<div className="w-16 aspect-square border-black border-2 bg-transparent"></div>
-			<h3 className="text-xl font-semibold">{title}</h3>
-			<p className="text-center text-sm">{description}</p>
+			<div className="w-16 aspect-square border-black border-2 bg-transparent md:w-24"></div>
+			<h3 className="text-xl font-semibold md:text-3xl">{title}</h3>
+			<p className="text-center text-sm md:text-md">{description}</p>
 		</motion.div>
 	);
 };

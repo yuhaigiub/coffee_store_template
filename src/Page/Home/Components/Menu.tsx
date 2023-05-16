@@ -5,7 +5,7 @@ const Menu = () => {
 	return (
 		<div className="bg-[#232323] text-white py-16 px-8 md:grid md:grid-cols-2 md:gap-16 md:py-36 md:px-48">
 			<div>
-				<h2 className="text-2xl mb-4 text-center md:text-right">DISCOVER OUR MENU</h2>
+				<h2 className="text-2xl mb-4 text-center md:text-right md:text-4xl">DISCOVER OUR MENU</h2>
 				<p className="text-justify text-sm mb-4 text-slate-400 md:text-right">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio facere aliquid a numquam
 					perspiciatis totam voluptates, fugit id nulla quos sunt maiores tenetur necessitatibus

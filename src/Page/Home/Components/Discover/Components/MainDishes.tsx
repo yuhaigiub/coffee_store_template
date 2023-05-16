@@ -1,9 +1,10 @@
 import React from "react";
 import Item from "./Item";
+import StaggerWrap from "./StaggerWrap";
 
 const MainDishes = () => {
 	return (
-		<>
+		<StaggerWrap key="Main Dishes">
 			<Item
 				name="Fillet Mignon"
 				price={12.99}
@@ -27,7 +28,7 @@ const MainDishes = () => {
 				price={5.99}
 				description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia."
 			/>
-		</>
+		</StaggerWrap>
 	);
 };
 

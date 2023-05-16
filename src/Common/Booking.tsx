@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Booking: React.FC<{ style?: "yellow" | "black" }> = ({ style = "yellow" }) => {
 	return (
 		<Container style={style}>
-			<h2 className="text-white text-2xl mb-4">BOOK A TABLE</h2>
+			<h2 className="text-white text-2xl mb-4 md:text-4xl">BOOK A TABLE</h2>
 			<div className="flex flex-col md:grid md:grid-cols-2 md:gap-x-8">
 				<Input placeholder="First name" style={style} />
 				<Input placeholder="Last name" style={style} />
@@ -12,7 +12,7 @@ const Booking: React.FC<{ style?: "yellow" | "black" }> = ({ style = "yellow" })
 				<Input placeholder="Time" type="time" style={style} />
 				<Input placeholder="Phone" style={style} />
 				<Input placeholder="Message" style={style} />
-				<div className="md:col-span-2 md:flex md:justify-center">
+				<div className="md:col-span-2 md:flex md:justify-center md:pt-4">
 					<motion.button
 						className="w-full md:w-1/2 h-10 mt-4"
 						style={{ backgroundColor: style === "yellow" ? "#fff" : "#c49b63" }}
@@ -65,5 +65,5 @@ const Container: React.FC<{ style: "yellow" | "black"; children: React.ReactNode
 	children,
 }) => {
 	if (style === "yellow") return <div className="bg-[#c49b63] py-16 px-8">{children}</div>;
-	else return <div className="bg-[#232323] py-16 px-8">{children}</div>;
+	else return <div className="bg-[#121212] py-16 px-8">{children}</div>;
 };
