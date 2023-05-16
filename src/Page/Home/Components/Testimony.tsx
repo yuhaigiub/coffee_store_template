@@ -25,10 +25,10 @@ const Testimony = () => {
 	];
 
 	return (
-		<div className="bg-[#232323] text-white py-16">
+		<div className="bg-[#232323] text-white py-16 md:py-36">
 			<div className="px-8">
 				<h2 className="text-2xl mb-4 text-center md:text-4xl">WHAT THE CUSTOMERS SAY</h2>
-				<p className="text-justify text-sm text-slate-400 md:text-center">
+				<p className="text-justify text-sm text-slate-400 md:text-center md:w-1/3 md:m-auto md: mb-12">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tempore quae sequi vitae,
 					vel atque!
 				</p>
