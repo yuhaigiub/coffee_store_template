@@ -52,34 +52,16 @@ export default Menu;
 
 const Item: React.FC<{ color?: string; children?: React.ReactNode }> = ({ color, children }) => {
 	if (color === "pink") {
-		return (
-			<div className="h-20 bg-pink-300 md:aspect-square md:w-full md:h-auto relative">
-				{children}
-			</div>
-		);
+		return <div className="bg-pink-300 aspect-square w-full relative">{children}</div>;
 	}
 	if (color === "red") {
-		return (
-			<div className="h-20 bg-red-300 md:aspect-square md:w-full md:h-auto relative">
-				{children}
-			</div>
-		);
+		return <div className="bg-red-300 aspect-square w-full relative">{children}</div>;
 	}
 	if (color === "yellow") {
-		return (
-			<div className="h-20 bg-yellow-300 md:aspect-square md:w-full md:h-auto relative">
-				{children}
-			</div>
-		);
+		return <div className="bg-yellow-300 aspect-square w-full relative">{children}</div>;
 	}
 	if (color === "blue") {
-		return (
-			<div className="h-20 bg-blue-300 md:aspect-square md:w-full md:h-auto relative">
-				{children}
-			</div>
-		);
+		return <div className="bg-blue-300 aspect-square w-full relative">{children}</div>;
 	}
-	return (
-		<div className="h-20 bg-white md:aspect-square md:w-full md:h-auto relative">{children}</div>
-	);
+	return <div className="h-36 bg-white aspect-square w-full relative">{children}</div>;
 };

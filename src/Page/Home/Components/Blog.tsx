@@ -19,9 +19,7 @@ const Blog = () => {
 					date={new Date("2023-04-18")}
 					author="Admin"
 					comments={3}
-					image={
-						<img src="blog1.webp" className="h-20 bg-pink-300 md:aspect-video md:h-56 lg:h-56" />
-					}
+					image={<img src="blog1.webp" className="aspect-video bg-pink-300 md:h-56 lg:h-56" />}
 				/>
 
 				<BlogPost
@@ -31,9 +29,7 @@ const Blog = () => {
 					date={new Date("2023-04-18")}
 					author="Admin"
 					comments={5}
-					image={
-						<img src="blog2.webp" className="h-20 bg-pink-300 md:aspect-video md:h-56 lg:h-56" />
-					}
+					image={<img src="blog2.webp" className="aspect-video bg-pink-300 md:h-56 lg:h-56" />}
 				/>
 
 				<BlogPost
@@ -43,9 +39,7 @@ const Blog = () => {
 					date={new Date("2023-04-18")}
 					author="Admin"
 					comments={8}
-					image={
-						<img src="blog3.webp" className="h-20 bg-pink-300 md:aspect-video md:h-56 lg:h-56" />
-					}
+					image={<img src="blog3.webp" className="aspect-video bg-pink-300 md:h-56 lg:h-56" />}
 				/>
 			</div>
 		</div>
