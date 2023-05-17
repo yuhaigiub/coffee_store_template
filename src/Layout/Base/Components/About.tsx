@@ -16,16 +16,18 @@ const About = () => {
 						scale: 1.1,
 					}}
 					whileTap={{ scale: 0.9 }}
-					className="cursor-pointer h-12 aspect-square bg-[url('instagram.png')] bg-cover flex justify-center items-center"
-				/>
+					className="cursor-pointer h-12 aspect-square bg-cover flex justify-center items-center">
+					<img src="/instagram.png" />
+				</motion.a>
 				<motion.a
 					whileHover={{
 						filter: "grayscale(0.2)",
 						scale: 1.1,
 					}}
 					whileTap={{ scale: 0.9 }}
-					className="cursor-pointer h-16 aspect-square bg-[url('facebook.png')] bg-cover flex justify-center items-center"
-				/>
+					className="cursor-pointer h-16 aspect-square bg-cover flex justify-center items-center">
+					<img src="/facebook.png" />
+				</motion.a>
 
 				<motion.a
 					whileHover={{
@@ -33,8 +35,9 @@ const About = () => {
 						scale: 1.1,
 					}}
 					whileTap={{ scale: 0.9 }}
-					className="cursor-pointer h-14 aspect-square bg-[url('twitter.png')] bg-cover flex justify-center items-center"
-				/>
+					className="cursor-pointer h-14 aspect-square bg-cover flex justify-center items-center">
+					<img src="/twitter.png" />
+				</motion.a>
 			</div>
 		</div>
 	);
