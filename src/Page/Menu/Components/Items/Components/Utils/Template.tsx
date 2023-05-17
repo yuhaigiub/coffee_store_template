@@ -4,13 +4,13 @@ import { Variants, motion } from "framer-motion";
 const Template: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => {
 	return (
 		<motion.div
-			className="bg-[#232323] text-white px-8"
+			className="bg-[#232323] text-white px-8 lg:self-center lg:flex lg:flex-col lg:items-center"
 			variants={variants}
 			initial="offScreen"
 			whileInView="onScreen"
 			viewport={{ amount: "all", once: true }}>
-			<h2 className="text-2xl mb-4">{title}</h2>
-			<motion.div className="flex flex-col gap-4" variants={variants}>
+			<h2 className="text-2xl mb-4 lg:mb-8 lg:text-4xl">{title}</h2>
+			<motion.div className="flex flex-col gap-4 lg:gap-6" variants={variants}>
 				{children}
 			</motion.div>
 		</motion.div>

@@ -10,7 +10,10 @@ const Item: React.FC<{
 	return (
 		<motion.div
 			key={name}
-			className="flex flex-col gap-2 md:justify-start md:items-center md:w-56"
+			className="flex flex-col gap-2 lg:justify-start lg:items-center lg:w-56 cursor-pointer"
+			whileHover={{
+				filter: "contrast(75%)",
+			}}
 			variants={{
 				initial: { opacity: 0, y: 50 },
 				animate: { opacity: 1, y: 0, transition: { type: "spring", duration: 0.5 } },

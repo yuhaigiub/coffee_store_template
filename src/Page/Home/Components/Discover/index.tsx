@@ -11,14 +11,14 @@ const Discover = () => {
 	const listItems = ["Main Dishes", "Drinks", "Desserts"];
 
 	return (
-		<div className="bg-black text-white py-16 px-8 md:py-36">
-			<h2 className="text-2xl mb-4 text-center md:text-4xl">DISCOVER OUR PRODUCTS</h2>
-			<p className="text-justify text-sm mb-8 text-slate-400 md:text-center md:w-1/3 md:m-auto md:mb-12">
+		<div className="bg-black text-white py-16 px-8 lg:py-36">
+			<h2 className="text-2xl mb-4 text-center lg:text-4xl">DISCOVER OUR PRODUCTS</h2>
+			<p className="text-justify text-sm mb-8 text-slate-400 lg:text-center lg:w-1/3 lg:m-auto lg:mb-12">
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quidem autem rerum
 				architecto neque vero amet quasi repellat asperiores, nostrum repellendus pariatur et
 				excepturi facilis.
 			</p>
-			<ul className="list-none flex flex-col gap-4 mb-16 md:flex-row md:justify-center md:gap-8">
+			<ul className="list-none flex flex-col gap-4 mb-16 lg:flex-row lg:justify-center lg:gap-8">
 				{listItems.map((text, i) => {
 					return (
 						<li key={text}>

@@ -10,7 +10,7 @@ const MainDishes = () => {
 				price={12.99}
 				description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia."
 				img={
-					<img src="maindish1.webp" className="bg-red-300 aspect-video md:aspect-square md:h-56" />
+					<img src="maindish1.webp" className="bg-red-300 aspect-video lg:aspect-square lg:h-56" />
 				}
 			/>
 			<Item
@@ -18,7 +18,7 @@ const MainDishes = () => {
 				price={20.99}
 				description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia."
 				img={
-					<img src="maindish2.webp" className="bg-blue-300 aspect-video md:aspect-square md:h-56" />
+					<img src="maindish2.webp" className="bg-blue-300 aspect-video lg:aspect-square lg:h-56" />
 				}
 			/>
 			<Item
@@ -28,7 +28,7 @@ const MainDishes = () => {
 				img={
 					<img
 						src="maindish3.webp"
-						className="bg-yellow-300 aspect-video md:aspect-square md:h-56"
+						className="bg-yellow-300 aspect-video lg:aspect-square lg:h-56"
 					/>
 				}
 			/>
@@ -39,7 +39,7 @@ const MainDishes = () => {
 				img={
 					<img
 						src="maindish4.webp"
-						className="bg-green-300 aspect-video md:aspect-square md:h-56"
+						className="bg-green-300 aspect-video lg:aspect-square lg:h-56"
 					/>
 				}
 			/>

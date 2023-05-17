@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 const Booking: React.FC<{ style?: "yellow" | "black" }> = ({ style = "yellow" }) => {
 	return (
 		<Container style={style}>
-			<h2 className="text-white text-2xl mb-4 md:text-4xl">BOOK A TABLE</h2>
-			<div className="flex flex-col md:grid md:grid-cols-2 md:gap-x-8">
+			<h2 className="text-white text-2xl mb-4 lg:text-4xl">BOOK A TABLE</h2>
+			<div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8">
 				<Input placeholder="First name" style={style} />
 				<Input placeholder="Last name" style={style} />
 				<Input placeholder="Date" type="date" style={style} />
 				<Input placeholder="Time" type="time" style={style} />
 				<Input placeholder="Phone" style={style} />
 				<Input placeholder="Message" style={style} />
-				<div className="md:col-span-2 md:flex md:justify-center md:pt-4">
+				<div className="lg:col-span-2 lg:flex lg:justify-center lg:pt-4">
 					<motion.button
-						className="w-full md:w-1/2 h-10 mt-4"
+						className="w-full lg:w-1/2 h-10 mt-4"
 						style={{ backgroundColor: style === "yellow" ? "#fff" : "#c49b63" }}
 						whileHover={{
 							scale: 1.1,

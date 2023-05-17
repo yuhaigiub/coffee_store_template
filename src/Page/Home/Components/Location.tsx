@@ -2,8 +2,8 @@ import React from "react";
 
 const Location = () => {
 	return (
-		<div className="w-full py-16 bg-[#232323] md:py-0">
-			<div className="px-8 text-white mb-8 md:hidden">
+		<div className="w-full py-16 bg-[#232323] lg:py-0">
+			<div className="px-8 text-white mb-8 lg:hidden">
 				<h2 className="text-2xl mb-4 text-center">FIND US ON THE MAP</h2>
 			</div>
 

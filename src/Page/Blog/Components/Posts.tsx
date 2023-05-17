@@ -3,8 +3,8 @@ import BlogPost from "../../../Common/BlogPost";
 
 const Posts = () => {
 	return (
-		<div className="bg-[#232323] text-white pb-16 px-8">
-			<div className="flex flex-col gap-8 divide-y-2">
+		<div className="bg-[#232323] text-white pb-16 px-8 lg:py-36">
+			<div className="flex flex-col gap-8 divide-y-2 lg:grid lg:grid-cols-3 lg:divide-y-0 lg:divide-x-2 divide-slate-600 lg:gap-0">
 				<BlogPost
 					id="post1"
 					title="The delicious Pizza"
@@ -12,9 +12,7 @@ const Posts = () => {
 					date={new Date("2023-04-18")}
 					author="Admin"
 					comments={3}
-					image={
-						<img src="blog1.webp" className="h-20 bg-pink-300 md:aspect-video md:h-48 lg:h-36" />
-					}
+					image={<img src="blog1.webp" className="aspect-video bg-pink-300 lg:h-56" />}
 				/>
 
 				<BlogPost
@@ -24,9 +22,7 @@ const Posts = () => {
 					date={new Date("2023-04-18")}
 					author="Admin"
 					comments={5}
-					image={
-						<img src="blog2.webp" className="h-20 bg-red-300 md:aspect-video md:h-48 lg:h-36" />
-					}
+					image={<img src="blog2.webp" className="aspect-video bg-blue-300 lg:h-56" />}
 				/>
 
 				<BlogPost
@@ -36,9 +32,7 @@ const Posts = () => {
 					date={new Date("2023-04-18")}
 					author="Admin"
 					comments={8}
-					image={
-						<img src="blog3.webp" className="h-20 bg-blue-300 md:aspect-video md:h-48 lg:h-36" />
-					}
+					image={<img src="blog3.webp" className="aspect-video bg-red-300 lg:h-56" />}
 				/>
 			</div>
 		</div>

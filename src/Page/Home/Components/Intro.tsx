@@ -57,20 +57,20 @@ const Intro = () => {
 	}, []);
 
 	return (
-		<div className="bg-[#232323] h-[80vh] md:h-[85vh] text-white relative overflow-hidden">
+		<div className="bg-[#232323] h-[80vh] lg:h-[85vh] text-white relative overflow-hidden">
 			<div className="flex flex-col items-center pt-32 pb-8 relative z-20 px-8">
-				<p className="text-center text-xl mb-4 text-orange-400 md:text-3xl">Welcome</p>
-				<h1 className="text-center text-3xl font-bold mb-4 md:text-5xl">
+				<p className="text-center text-xl mb-4 text-orange-400 lg:text-3xl">Welcome</p>
+				<h1 className="text-center text-3xl font-bold mb-4 lg:text-5xl">
 					CREAMY HOT AND READY TO SERVE
 				</h1>
-				<p className="text-center md:text-lg">
+				<p className="text-center lg:text-lg">
 					A small river named Duden flows by their place and supplies it with the necessary
 					regelialia
 				</p>
 			</div>
 			<div className="flex justify-center gap-4 relative z-20">
 				<motion.button
-					className="px-2 py-2 border-2 md:px-8 md:py:4"
+					className="px-2 py-2 border-2 lg:px-8 lg:py:4"
 					style={{ color: "#000", backgroundColor: "#c49b63", borderColor: "#c49b63" }}
 					whileHover={{
 						scale: 1.1,
@@ -86,7 +86,7 @@ const Intro = () => {
 					Order Now
 				</motion.button>
 				<motion.button
-					className="px-2 py-2 border-2 border-[#c49b63] md:px-8 md:py-4"
+					className="px-2 py-2 border-2 border-[#c49b63] lg:px-8 lg:py-4"
 					style={{ color: "#fff", backgroundColor: "#232323", borderColor: "#c49b63" }}
 					whileHover={{
 						scale: 1.1,

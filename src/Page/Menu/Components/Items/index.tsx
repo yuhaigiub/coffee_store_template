@@ -6,7 +6,7 @@ import Drinks from "./Components/Drinks";
 
 const Items = () => {
 	return (
-		<div className="flex flex-col gap-16 bg-[#232323] py-16">
+		<div className="flex flex-col lg:grid lg:grid-cols-2 gap-16 bg-[#232323] py-16 lg:py-36">
 			<Starters />
 			<MainDishes />
 			<Desserts />

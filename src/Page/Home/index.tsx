@@ -17,11 +17,11 @@ const Home = () => {
 	return (
 		<>
 			<Intro />
-			<div className="md:grid md:grid-cols-5 md:bg-black">
-				<div className="md:col-span-3">
+			<div className="lg:grid lg:grid-cols-5 lg:bg-black">
+				<div className="lg:col-span-3">
 					<Info />
 				</div>
-				<div className="md:col-span-2 relative">
+				<div className="lg:col-span-2 relative">
 					<Booking style="yellow" />
 				</div>
 			</div>
@@ -33,7 +33,7 @@ const Home = () => {
 			<Discover />
 			<Testimony />
 			<Blog />
-			<div className="md:grid md:grid-cols-2 md:bg-[#232323]">
+			<div className="lg:grid lg:grid-cols-2 lg:bg-[#232323]">
 				<Location />
 				<Booking style="black" />
 			</div>

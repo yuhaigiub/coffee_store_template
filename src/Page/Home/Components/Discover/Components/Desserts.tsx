@@ -10,7 +10,7 @@ const Desserts = () => {
 				price={12.99}
 				description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia."
 				img={
-					<img src="dessert1.webp" className="aspect-video bg-pink-300 md:aspect-square md:h-56" />
+					<img src="dessert1.webp" className="aspect-video bg-pink-300 lg:aspect-square lg:h-56" />
 				}
 			/>
 			<Item
@@ -20,7 +20,7 @@ const Desserts = () => {
 				img={
 					<img
 						src="dessert2.webp"
-						className="aspect-video bg-purple-300 md:aspect-square md:h-56"
+						className="aspect-video bg-purple-300 lg:aspect-square lg:h-56"
 					/>
 				}
 			/>
@@ -29,7 +29,7 @@ const Desserts = () => {
 				price={6.95}
 				description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia."
 				img={
-					<img src="dessert3.webp" className="aspect-video bg-red-300 md:aspect-square md:h-56" />
+					<img src="dessert3.webp" className="aspect-video bg-red-300 lg:aspect-square lg:h-56" />
 				}
 			/>
 			<Item
@@ -37,7 +37,7 @@ const Desserts = () => {
 				price={10.99}
 				description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia."
 				img={
-					<img src="dessert4.webp" className="aspect-video bg-green-300 md:aspect-square md:h-56" />
+					<img src="dessert4.webp" className="aspect-video bg-green-300 lg:aspect-square lg:h-56" />
 				}
 			/>
 		</StaggerWrap>

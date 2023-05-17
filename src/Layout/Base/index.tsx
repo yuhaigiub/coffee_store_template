@@ -21,8 +21,8 @@ const Layout: React.FC = () => {
 		<div>
 			<motion.header
 				layout
-				className="bg-black text-white sticky top-0 z-50 md:h-[15vh] md:flex md:items-center">
-				<div className="w-full flex items-center justify-between h-20 px-8 md:px-48">
+				className="bg-black text-white sticky top-0 z-50 lg:h-[15vh] lg:flex lg:items-center">
+				<div className="w-full flex items-center justify-between h-20 px-8 lg:px-48">
 					<button
 						className="text-center font-bold cursor-pointer"
 						onClick={() => {
@@ -31,7 +31,7 @@ const Layout: React.FC = () => {
 						}}>
 						Coffee Store
 					</button>
-					<ul className="hidden md:flex justify-end w-full list-none">
+					<ul className="hidden lg:flex justify-end w-full list-none">
 						<li>
 							<MenuButton2
 								text="HOME"
@@ -66,7 +66,7 @@ const Layout: React.FC = () => {
 						</li>
 					</ul>
 					<motion.button
-						className="md:hidden"
+						className="lg:hidden"
 						style={{ color: isOpen ? "#c49b63" : "#fff" }}
 						whileHover={{
 							color: "#c49b63",
@@ -85,7 +85,7 @@ const Layout: React.FC = () => {
 				<AnimatePresence>
 					{isOpen && (
 						<motion.ul
-							className="list-none flex flex-col justify-start overflow-hidden md:hidden"
+							className="list-none flex flex-col justify-start overflow-hidden lg:hidden"
 							layout
 							variants={menuVariants}
 							initial="enter"
@@ -133,8 +133,8 @@ const Layout: React.FC = () => {
 				<Outlet />
 			</main>
 
-			<footer className="bg-black md:py-36 md:px-48">
-				<div className="md:grid md:grid-cols-3 md:gap-8">
+			<footer className="bg-black lg:py-36 lg:px-48">
+				<div className="lg:grid lg:grid-cols-3 lg:gap-8">
 					<About />
 					<Service />
 					<Contact />

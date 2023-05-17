@@ -5,7 +5,7 @@ const Comments: React.FC<{ id: string }> = ({ id }) => {
 	const comments = getComments(id as string);
 
 	return (
-		<div className="bg-[#232323] pb-16 px-8 text-white">
+		<div className="bg-[#232323] pb-16 px-8 text-white lg:py-36 lg:px-48">
 			<h2 className="text-2xl pb-8 font-bold text-white">Comments</h2>
 			<div className="flex flex-col gap-8">
 				{comments.map((comment, index) => {

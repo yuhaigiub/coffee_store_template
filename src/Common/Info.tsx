@@ -4,7 +4,7 @@ import { motion, Variants } from "framer-motion";
 const Info = () => {
 	return (
 		<motion.div
-			className="bg-black py-8 px-8 flex flex-col md:grid md:grid-cols-3 md:pl-48 md:py-16 justify-center gap-4"
+			className="bg-black py-8 px-8 flex flex-col lg:grid lg:grid-cols-3 lg:pl-48 lg:py-16 justify-center gap-4"
 			variants={parentVariants}
 			initial="offScreen"
 			whileInView="onScreen"

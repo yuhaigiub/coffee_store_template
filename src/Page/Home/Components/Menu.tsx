@@ -3,17 +3,17 @@ import { motion } from "framer-motion";
 
 const Menu = () => {
 	return (
-		<div className="bg-[#232323] text-white py-16 px-8 md:grid md:grid-cols-2 md:gap-16 md:py-36 md:px-48">
+		<div className="bg-[#232323] text-white py-16 px-8 lg:grid lg:grid-cols-2 lg:gap-16 lg:py-36 lg:px-48">
 			<div>
-				<h2 className="text-2xl mb-4 text-center md:text-right md:text-4xl">DISCOVER OUR MENU</h2>
-				<p className="text-justify text-sm mb-4 text-slate-400 md:text-right">
+				<h2 className="text-2xl mb-4 text-center lg:text-right lg:text-4xl">DISCOVER OUR MENU</h2>
+				<p className="text-justify text-sm mb-4 text-slate-400 lg:text-right">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio facere aliquid a numquam
 					perspiciatis totam voluptates, fugit id nulla quos sunt maiores tenetur necessitatibus
 					nostrum iusto, recusandae in? Molestias, error! Tenetur, cupiditate in maiores, modi natus
 					minima, voluptatem sit pariatur ipsum aliquam molestias. Laboriosam similique cupiditate
 					esse ut dolores deleniti.
 				</p>
-				<div className="md:flex md:justify-end">
+				<div className="lg:flex lg:justify-end">
 					<motion.button
 						className="text-[#c49b63] border-[#c49b63] border-2 px-4 py-2 mb-8"
 						whileHover={{
@@ -26,7 +26,7 @@ const Menu = () => {
 					</motion.button>
 				</div>
 			</div>
-			<div className="flex flex-col gap-8 md:w-2/3 md:grid md:grid-cols-2">
+			<div className="flex flex-col gap-8 lg:w-2/3 lg:grid lg:grid-cols-2">
 				<Item color="red">
 					<div className="absolute w-full h-full bg-black z-20 opacity-10" />
 					<img src="menu1.webp" className="absolute w-full h-full" />

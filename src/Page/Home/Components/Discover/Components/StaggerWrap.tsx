@@ -5,7 +5,7 @@ const StaggerWrap: React.FC<{ children?: React.ReactNode; id: string }> = ({ chi
 	return (
 		<motion.div
 			key={id}
-			className="flex flex-col gap-8 md:flex-row md:justify-center"
+			className="flex flex-col gap-8 lg:flex-row lg:justify-center"
 			variants={{
 				animate: {
 					transition: {

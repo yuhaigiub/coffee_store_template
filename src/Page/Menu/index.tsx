@@ -6,8 +6,14 @@ const Menu = () => {
 	return (
 		<>
 			<Intro />
-			<Info />
-			<Booking style="yellow" />
+			<div className="lg:grid lg:grid-cols-5 lg:bg-black">
+				<div className="lg:col-span-3">
+					<Info />
+				</div>
+				<div className="lg:col-span-2 relative">
+					<Booking style="yellow" />
+				</div>
+			</div>
 			<Items />
 		</>
 	);

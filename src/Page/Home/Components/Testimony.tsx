@@ -25,22 +25,22 @@ const Testimony = () => {
 	];
 
 	return (
-		<div className="bg-[#232323] text-white py-16 md:py-36">
+		<div className="bg-[#232323] text-white py-16 lg:py-36">
 			<div className="px-8">
-				<h2 className="text-2xl mb-4 text-center md:text-4xl">WHAT THE CUSTOMERS SAY</h2>
-				<p className="text-justify text-sm text-slate-400 md:text-center md:w-1/3 md:m-auto md: mb-12">
+				<h2 className="text-2xl mb-4 text-center lg:text-4xl">WHAT THE CUSTOMERS SAY</h2>
+				<p className="text-justify text-sm text-slate-400 lg:text-center lg:w-1/3 lg:m-auto lg: mb-12">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tempore quae sequi vitae,
 					vel atque!
 				</p>
 			</div>
 
-			<div className="mt-8 flex flex-col md:flex-row">
+			<div className="mt-8 flex flex-col lg:flex-row">
 				{comments.map((comment, index) => {
 					if (index % 2 === 0) {
 						return (
 							<div
 								key={index}
-								className="bg-[#c49b63] px-8 py-4 flex flex-col gap-2 text-[#232323] md:py-16 md:px-12">
+								className="bg-[#c49b63] px-8 py-4 flex flex-col gap-2 text-[#232323] lg:py-16 lg:px-12">
 								{comment}
 							</div>
 						);
@@ -48,7 +48,7 @@ const Testimony = () => {
 					return (
 						<div
 							key={index}
-							className="bg-[#936c35] px-8 py-4 flex flex-col gap-2 text-slate-100 md:py-16 md:px-12">
+							className="bg-[#936c35] px-8 py-4 flex flex-col gap-2 text-slate-100 lg:py-16 lg:px-12">
 							{comment}
 						</div>
 					);
