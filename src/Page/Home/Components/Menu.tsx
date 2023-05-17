@@ -27,10 +27,22 @@ const Menu = () => {
 				</div>
 			</div>
 			<div className="flex flex-col gap-8 md:w-2/3 md:grid md:grid-cols-2">
-				<Item color="red" />
-				<Item color="blue" />
-				<Item color="yellow" />
-				<Item color="pink" />
+				<Item color="red">
+					<div className="absolute w-full h-full bg-black z-20 opacity-10" />
+					<img src="menu1.webp" className="absolute w-full h-full" />
+				</Item>
+				<Item color="blue">
+					<div className="absolute w-full h-full bg-black z-20 opacity-10" />
+					<img src="menu2.webp" className="absolute w-full h-full" />
+				</Item>
+				<Item color="yellow">
+					<div className="absolute w-full h-full bg-black z-20 opacity-10" />
+					<img src="menu3.webp" className="absolute w-full h-full" />
+				</Item>
+				<Item color="pink">
+					<div className="absolute w-full h-full bg-black z-20 opacity-20" />
+					<img src="menu4.webp" className="absolute w-full h-full" />
+				</Item>
 			</div>
 		</div>
 	);
@@ -38,18 +50,36 @@ const Menu = () => {
 
 export default Menu;
 
-const Item: React.FC<{ color?: string }> = ({ color }) => {
+const Item: React.FC<{ color?: string; children?: React.ReactNode }> = ({ color, children }) => {
 	if (color === "pink") {
-		return <div className="h-20 bg-pink-300 md:aspect-square md:w-full md:h-auto"></div>;
+		return (
+			<div className="h-20 bg-pink-300 md:aspect-square md:w-full md:h-auto relative">
+				{children}
+			</div>
+		);
 	}
 	if (color === "red") {
-		return <div className="h-20 bg-red-300 md:aspect-square md:w-full md:h-auto"></div>;
+		return (
+			<div className="h-20 bg-red-300 md:aspect-square md:w-full md:h-auto relative">
+				{children}
+			</div>
+		);
 	}
 	if (color === "yellow") {
-		return <div className="h-20 bg-yellow-300 md:aspect-square md:w-full md:h-auto"></div>;
+		return (
+			<div className="h-20 bg-yellow-300 md:aspect-square md:w-full md:h-auto relative">
+				{children}
+			</div>
+		);
 	}
 	if (color === "blue") {
-		return <div className="h-20 bg-blue-300 md:aspect-square md:w-full md:h-auto"></div>;
+		return (
+			<div className="h-20 bg-blue-300 md:aspect-square md:w-full md:h-auto relative">
+				{children}
+			</div>
+		);
 	}
-	return <div className="h-20 bg-white md:aspect-square md:w-full md:h-auto"></div>;
+	return (
+		<div className="h-20 bg-white md:aspect-square md:w-full md:h-auto relative">{children}</div>
+	);
 };

@@ -21,7 +21,7 @@ const Layout: React.FC = () => {
 		<div>
 			<motion.header
 				layout
-				className="bg-black text-white sticky top-0 z-10 md:h-[15vh] md:flex md:items-center">
+				className="bg-black text-white sticky top-0 z-50 md:h-[15vh] md:flex md:items-center">
 				<div className="w-full flex items-center justify-between h-20 px-8 md:px-48">
 					<button
 						className="text-center font-bold cursor-pointer"

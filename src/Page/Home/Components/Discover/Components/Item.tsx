@@ -1,29 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Image: React.FC<{ color?: string }> = ({ color }) => {
-	if (color === "pink") {
-		return <div className="h-20 bg-pink-300 md:aspect-square md:h-56"></div>;
-	}
-	if (color === "red") {
-		return <div className="h-20 bg-red-300 md:aspect-square md:h-56"></div>;
-	}
-	if (color === "yellow") {
-		return <div className="h-20 bg-yellow-300 md:aspect-square md:h-56"></div>;
-	}
-	if (color === "blue") {
-		return <div className="h-20 bg-blue-300 md:aspect-square md:h-56"></div>;
-	}
-	return <div className="h-20 bg-white md:h-56 md:aspect-square"></div>;
-};
-
-const Item: React.FC<{ color?: string; name: string; price: number; description: string }> = ({
-	color,
-	name,
-	price,
-	description,
-}) => {
-	const img = <Image color={color} />;
+const Item: React.FC<{
+	color?: string;
+	name: string;
+	price: number;
+	description: string;
+	img: React.ReactNode;
+}> = ({ color, name, price, description, img }) => {
 	return (
 		<motion.div
 			key={name}

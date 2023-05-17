@@ -12,6 +12,9 @@ const Posts = () => {
 					date={new Date("2023-04-18")}
 					author="Admin"
 					comments={3}
+					image={
+						<img src="blog1.webp" className="h-20 bg-pink-300 md:aspect-video md:h-48 lg:h-36" />
+					}
 				/>
 
 				<BlogPost
@@ -22,6 +25,9 @@ const Posts = () => {
 					author="Admin"
 					comments={5}
 					color="red"
+					image={
+						<img src="blog2.webp" className="h-20 bg-red-300 md:aspect-video md:h-48 lg:h-36" />
+					}
 				/>
 
 				<BlogPost
@@ -32,6 +38,9 @@ const Posts = () => {
 					author="Admin"
 					comments={8}
 					color="blue"
+					image={
+						<img src="blog3.webp" className="h-20 bg-blue-300 md:aspect-video md:h-48 lg:h-36" />
+					}
 				/>
 			</div>
 		</div>

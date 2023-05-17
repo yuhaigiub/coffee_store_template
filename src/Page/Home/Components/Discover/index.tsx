@@ -3,7 +3,7 @@ import MainDishes from "./Components/MainDishes";
 import Drinks from "./Components/Drinks";
 import Desserts from "./Components/Desserts";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Discover = () => {
 	const [index, setIndex] = useState(0);
@@ -34,9 +34,7 @@ const Discover = () => {
 				})}
 			</ul>
 
-			<div>
-				<AnimatePresence mode="popLayout">{menus[index]}</AnimatePresence>
-			</div>
+			<div>{menus[index]}</div>
 		</div>
 	);
 };

@@ -14,28 +14,28 @@ const BestSeller = () => {
 
 			<div className="flex flex-col gap-8 md:flex-row md:justify-center">
 				<Item
-					color="red"
 					name="Capuccino"
 					price={5.99}
 					description="A small river named Duden flows by their place and supplies"
+					img={<img src="menu1.webp" className="h-20 bg-pink-300 md:aspect-square md:h-36" />}
 				/>
 				<Item
-					color="blue"
 					name="Espresso"
 					price={4.99}
 					description="A small river named Duden flows by their place and supplies"
+					img={<img src="menu2.webp" className="h-20 bg-green-300 md:aspect-square md:h-36" />}
 				/>
 				<Item
-					color="yellow"
 					name="Black Coffee"
 					price={1.99}
 					description="A small river named Duden flows by their place and supplies"
+					img={<img src="menu3.webp" className="h-20 bg-blue-300 md:aspect-square md:h-36" />}
 				/>
 				<Item
-					color="pink"
 					name="Milk Coffee"
 					price={2.79}
 					description="A small river named Duden flows by their place and supplies"
+					img={<img src="menu4.webp" className="h-20 bg-yellow-300 md:aspect-square md:h-36" />}
 				/>
 			</div>
 		</div>
@@ -44,29 +44,12 @@ const BestSeller = () => {
 
 export default BestSeller;
 
-const Image: React.FC<{ color?: string }> = ({ color }) => {
-	if (color === "pink") {
-		return <div className="h-20 bg-pink-300 md:aspect-square md:h-36"></div>;
-	}
-	if (color === "red") {
-		return <div className="h-20 bg-red-300 md:aspect-square md:h-36"></div>;
-	}
-	if (color === "yellow") {
-		return <div className="h-20 bg-yellow-300 md:aspect-square md:h-36"></div>;
-	}
-	if (color === "blue") {
-		return <div className="h-20 bg-blue-300 md:aspect-square md:h-36"></div>;
-	}
-	return <div className="h-20 bg-white md:aspect-square md:h-36"></div>;
-};
-
-const Item: React.FC<{ color?: string; name: string; price: number; description: string }> = ({
-	color,
-	name,
-	price,
-	description,
-}) => {
-	const img = <Image color={color} />;
+const Item: React.FC<{
+	name: string;
+	price: number;
+	description: string;
+	img: React.ReactNode;
+}> = ({ name, price, description, img }) => {
 	return (
 		<div className="flex flex-col gap-2 md:items-center">
 			{img}

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Variants, motion, useMotionValue, useTransform, animate } from "framer-motion";
 const Statistics = () => {
 	return (
-		<div className="bg-black flex flex-col gap-16 py-16 px-8 md:flex-row md:gap-24 md:justify-center md:py-36 md:px-48">
+		<div className="bg-[url('statistics.webp')] bg-cover flex flex-col gap-16 py-16 px-8 md:flex-row md:gap-24 md:justify-center md:py-36 md:px-48 relative">
+			<div className="absolute w-full h-full bg-black top-0 opacity-70" />
 			<Feature number={10} description="Coffee branches" />
 			<Feature number={5} description="Number of awards" />
 			<Feature number={10000} description="Happy customer" />
@@ -30,7 +31,7 @@ const Feature: React.FC<{ number: number; description: string }> = ({ number, de
 
 	return (
 		<motion.div
-			className="flex flex-col items-center md:gap-2"
+			className="flex flex-col items-center md:gap-2 relative z-20"
 			variants={variants}
 			initial="offScreen"
 			whileInView="onScreen"
