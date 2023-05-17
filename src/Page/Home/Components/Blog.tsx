@@ -4,7 +4,7 @@ import BlogPost from "../../../Common/BlogPost";
 const Blog = () => {
 	return (
 		<div className="bg-[#232323] text-white py-16 px-8 md:py-36">
-			<h2 className="text-2xl mb-4 text-center md:text-4xl">RECENT FROM BLOG</h2>
+			<h2 className="text-2xl mb-4 text-center md:text-4xl text-red-500">RECENT FROM BLOG</h2>
 			<p className="text-justify text-sm mb-8 text-slate-400 md:text-center md:w-1/3 md:m-auto md:mb-12">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam iure pariatur animi
 				nulla. Quas odit ex, eveniet praesentium quibusdam eaque, nostrum voluptatum, officia ipsam
