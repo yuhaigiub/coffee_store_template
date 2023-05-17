@@ -5,7 +5,7 @@ const Features = () => {
 	return (
 		<div className="bg-[#c49b63] flex flex-col gap-16 py-16 px-8 md:flex-row md:py-36 md:px-48">
 			<Feature
-				title="EASY TO ORDER"
+				title="Easy to Order"
 				description="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
 			/>
 			<Feature
@@ -13,7 +13,7 @@ const Features = () => {
 				description="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
 			/>
 			<Feature
-				title="QUALITY COFFEE"
+				title="Quality Coffee"
 				description="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
 			/>
 		</div>

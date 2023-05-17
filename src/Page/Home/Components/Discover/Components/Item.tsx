@@ -2,12 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Item: React.FC<{
-	color?: string;
 	name: string;
 	price: number;
 	description: string;
 	img: React.ReactNode;
-}> = ({ color, name, price, description, img }) => {
+}> = ({ name, price, description, img }) => {
 	return (
 		<motion.div
 			key={name}

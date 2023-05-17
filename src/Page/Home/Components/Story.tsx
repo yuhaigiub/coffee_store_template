@@ -3,7 +3,9 @@ import React from "react";
 const Story = () => {
 	return (
 		<div className="md:bg-[#232323] relative w-full">
-			<div className="h-40 bg-[url('story.jpg')] bg-cover md:w-[45vw] md:h-[55vh] opacity-80" />
+			<div className="h-40 bg-cover md:w-[45vw] md:h-[55vh] opacity-80 relative">
+				<img src="story.jpg" className="absolute w-full h-full" />
+			</div>
 			<div className="bg-[#121212] text-white py-16 px-8 md:w-[40vw] md:absolute top-16 left-[38vw] md:opacity-80">
 				<h2 className="text-2xl mb-4 text-center md:text-4xl">DISCOVER OUR STORY</h2>
 				<p className="text-justify text-sm text-slate-400">

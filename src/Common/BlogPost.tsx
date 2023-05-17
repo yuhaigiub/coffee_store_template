@@ -10,8 +10,7 @@ const BlogPost: React.FC<{
 	author: string;
 	comments: number;
 	image: React.ReactNode;
-	color?: string;
-}> = ({ id, title, description, date, author, comments, color, image }) => {
+}> = ({ id, title, description, date, author, comments, image }) => {
 	const navigate = useNavigate();
 	return (
 		<motion.div
