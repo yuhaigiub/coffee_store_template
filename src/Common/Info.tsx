@@ -8,7 +8,7 @@ const Info = () => {
 			variants={parentVariants}
 			initial="offScreen"
 			whileInView="onScreen"
-			viewport={{ once: true, amount: "all" }}>
+			viewport={{ amount: "all" }}>
 			<Card big="0123 456 789" small="Mr. Huy" />
 			<Card big="203 A street, Ba Dinh ward, District 1" small="Ho Chi Minh city" />
 			<Card big="Open Monday - Friday" small="8:00am - 9:00pm" />
@@ -34,7 +34,7 @@ const parentVariants: Variants = {
 	offScreen: {},
 	onScreen: {
 		transition: {
-			staggerChildren: 0.1,
+			staggerChildren: 0.05,
 		},
 	},
 };

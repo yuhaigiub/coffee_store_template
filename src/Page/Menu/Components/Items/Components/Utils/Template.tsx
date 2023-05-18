@@ -8,7 +8,7 @@ const Template: React.FC<{ title: string; children: React.ReactNode }> = ({ titl
 			variants={variants}
 			initial="offScreen"
 			whileInView="onScreen"
-			viewport={{ amount: "all", once: true }}>
+			viewport={{ once: true }}>
 			<h2 className="text-2xl mb-4 lg:mb-8 lg:text-4xl">{title}</h2>
 			<motion.div className="flex flex-col gap-4 lg:gap-6" variants={variants}>
 				{children}
@@ -31,7 +31,7 @@ const variants: Variants = {
 			type: "spring",
 			stiffness: 300,
 			damping: 24,
-			staggerChildren: 0.2,
+			staggerChildren: 0.05,
 		},
 	},
 };

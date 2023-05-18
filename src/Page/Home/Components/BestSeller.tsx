@@ -1,6 +1,7 @@
 import React from "react";
+import { Variants, motion } from "framer-motion";
 
-const BestSeller = () => {
+const BestSeller: React.FC = () => {
 	return (
 		<div className="bg-[#232323] text-white py-16 px-8 lg:py-36 lg:px-48">
 			<h2 className="text-2xl mb-4 text-center lg:text-4xl">DISCOVER OUR BEST COFFEE SELLER</h2>
@@ -51,11 +52,32 @@ const Item: React.FC<{
 	img: React.ReactNode;
 }> = ({ name, price, description, img }) => {
 	return (
-		<div className="flex flex-col gap-2 lg:items-center">
+		<motion.div
+			variants={variants}
+			initial="offScreen"
+			whileInView="onScreen"
+			className="flex flex-col gap-2 lg:items-center">
 			{img}
 			<h3 className="text-2xl text-center lg:text-3xl">{name}</h3>
 			<p className="text-slate-400 text-center text-sm lg:w-36">{description}</p>
 			<p className="text-[#c49b63] text-2xl text-center">$ {price}</p>
-		</div>
+		</motion.div>
 	);
+};
+
+const variants: Variants = {
+	offScreen: {
+		y: -50,
+		opacity: 0,
+	},
+	onScreen: {
+		y: 50,
+		opacity: 1,
+		transition: {
+			delay: 0.05,
+			type: "spring",
+			stiffness: 300,
+			damping: 24,
+		},
+	},
 };

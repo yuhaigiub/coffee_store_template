@@ -13,7 +13,7 @@ import {
 	Location,
 } from "./Components/_index";
 
-const Home = () => {
+const Home: React.FC = () => {
 	return (
 		<>
 			<Intro />
