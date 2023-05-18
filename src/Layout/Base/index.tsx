@@ -24,7 +24,7 @@ const Layout: React.FC = () => {
 				className="bg-black text-white sticky top-0 z-50 lg:h-[15vh] lg:flex lg:items-center">
 				<div className="w-full flex items-center justify-between h-20 px-8 lg:px-48">
 					<button
-						className="text-center font-bold cursor-pointer"
+						className="text-center font-bold cursor-pointer lg:w-36 lg:text-xl"
 						onClick={() => {
 							window.scrollTo(0, 0);
 							navigate("/");

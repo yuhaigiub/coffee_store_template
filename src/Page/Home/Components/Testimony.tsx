@@ -1,6 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-const Testimony = () => {
+const Testimony: React.FC = () => {
 	const comments = [
 		<Comment
 			name="Adam Ragusea"
@@ -38,19 +39,35 @@ const Testimony = () => {
 				{comments.map((comment, index) => {
 					if (index % 2 === 0) {
 						return (
-							<div
+							<motion.div
+								initial={{ opacity: 0, y: 100 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								transition={{
+									delay: 0.03,
+									type: "spring",
+									stiffness: 300,
+									damping: 24,
+								}}
 								key={index}
 								className="bg-[#c49b63] px-8 py-4 flex flex-col gap-2 text-[#232323] lg:py-16 lg:px-12">
 								{comment}
-							</div>
+							</motion.div>
 						);
 					}
 					return (
-						<div
+						<motion.div
+							initial={{ opacity: 0, y: -100 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{
+								delay: 0.03,
+								type: "spring",
+								stiffness: 300,
+								damping: 24,
+							}}
 							key={index}
 							className="bg-[#936c35] px-8 py-4 flex flex-col gap-2 text-slate-100 lg:py-16 lg:px-12">
 							{comment}
-						</div>
+						</motion.div>
 					);
 				})}
 			</div>

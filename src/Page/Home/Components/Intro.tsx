@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, Variants, motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const variants: Variants = {
 	initial: {
@@ -19,7 +20,8 @@ const variants: Variants = {
 	},
 };
 
-const Intro = () => {
+const Intro: React.FC = () => {
+	const navigate = useNavigate();
 	const [index, setIndex] = useState(0);
 
 	const introImages = [
@@ -98,7 +100,10 @@ const Intro = () => {
 							color: { delay: 0.1, duration: 0.25 },
 						},
 					}}
-					whileTap={{ scale: 0.9 }}>
+					whileTap={{ scale: 0.9 }}
+					onClick={() => {
+						navigate("/menu");
+					}}>
 					View Menu
 				</motion.button>
 			</div>

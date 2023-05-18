@@ -1,9 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { Variants, motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
-const Menu = () => {
+const Menu: React.FC = () => {
+	const navigate = useNavigate();
+
 	return (
-		<div className="bg-[#232323] text-white py-16 px-8 lg:grid lg:grid-cols-2 lg:gap-16 lg:py-36 lg:px-48">
+		<div className="bg-[#232323] text-white py-16 px-8 lg:grid lg:grid-cols-2 lg:gap-16 lg:py-36 lg:px-48 overflow-hidden">
 			<div>
 				<h2 className="text-2xl mb-4 text-center lg:text-right lg:text-4xl">DISCOVER OUR MENU</h2>
 				<p className="text-justify text-sm mb-4 text-slate-400 lg:text-right">
@@ -21,12 +24,15 @@ const Menu = () => {
 							borderColor: "#a46e22",
 							scale: 1.1,
 						}}
-						whileTap={{ scale: 0.9 }}>
+						whileTap={{ scale: 0.9 }}
+						onClick={() => {
+							navigate("/menu");
+						}}>
 						View full menu
 					</motion.button>
 				</div>
 			</div>
-			<div className="flex flex-col gap-8 lg:w-2/3 lg:grid lg:grid-cols-2">
+			<motion.div className="flex flex-col gap-8 lg:w-2/3 lg:grid lg:grid-cols-2">
 				<Item color="red">
 					<div className="absolute w-full h-full bg-black z-20 opacity-10" />
 					<img src="menu1.webp" className="absolute w-full h-full" />
@@ -43,7 +49,7 @@ const Menu = () => {
 					<div className="absolute w-full h-full bg-black z-20 opacity-20" />
 					<img src="menu4.webp" className="absolute w-full h-full" />
 				</Item>
-			</div>
+			</motion.div>
 		</div>
 	);
 };
@@ -52,16 +58,73 @@ export default Menu;
 
 const Item: React.FC<{ color?: string; children?: React.ReactNode }> = ({ color, children }) => {
 	if (color === "pink") {
-		return <div className="bg-pink-300 aspect-square w-full relative">{children}</div>;
+		return (
+			<motion.div
+				variants={childVariants}
+				initial="offScreen"
+				whileInView="onScreen"
+				className="bg-pink-300 aspect-square w-full relative">
+				{children}
+			</motion.div>
+		);
 	}
 	if (color === "red") {
-		return <div className="bg-red-300 aspect-square w-full relative">{children}</div>;
+		return (
+			<motion.div
+				variants={childVariants}
+				initial="offScreen"
+				whileInView="onScreen"
+				className="bg-red-300 aspect-square w-full relative">
+				{children}
+			</motion.div>
+		);
 	}
 	if (color === "yellow") {
-		return <div className="bg-yellow-300 aspect-square w-full relative">{children}</div>;
+		return (
+			<motion.div
+				variants={childVariants}
+				initial="offScreen"
+				whileInView="onScreen"
+				className="bg-yellow-300 aspect-square w-full relative">
+				{children}
+			</motion.div>
+		);
 	}
 	if (color === "blue") {
-		return <div className="bg-blue-300 aspect-square w-full relative">{children}</div>;
+		return (
+			<motion.div
+				variants={childVariants}
+				initial="offScreen"
+				whileInView="onScreen"
+				className="bg-blue-300 aspect-square w-full relative">
+				{children}
+			</motion.div>
+		);
 	}
-	return <div className="h-36 bg-white aspect-square w-full relative">{children}</div>;
+	return (
+		<motion.div
+			variants={childVariants}
+			initial="offScreen"
+			whileInView="onScreen"
+			className="h-36 bg-white aspect-square w-full relative">
+			{children}
+		</motion.div>
+	);
+};
+
+const childVariants: Variants = {
+	offScreen: {
+		x: -50,
+		opacity: 0,
+	},
+	onScreen: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			delay: 0.05,
+			type: "spring",
+			stiffness: 300,
+			damping: 24,
+		},
+	},
 };

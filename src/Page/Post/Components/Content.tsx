@@ -17,7 +17,14 @@ const Content: React.FC<{ id: string }> = ({ id }) => {
 								<div key={index} className="h-40 bg-pink-400 lg:h-96 lg:aspect-video lg:m-auto" />
 							);
 						} else {
-							return <image href={part[1]} />;
+							console.log(part[1]);
+							return (
+								<img
+									key={index}
+									src={`/${part[1]}`}
+									className="h-40 bg-pink-400 lg:h-96 lg:aspect-video lg:m-auto"
+								/>
+							);
 						}
 					else return <p key={index}>{part[1]}</p>;
 				})}
